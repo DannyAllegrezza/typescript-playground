@@ -22,9 +22,7 @@ function postScore(score: number, playerName: string = 'MultiMath Player'): void
     scoreElement!.innerText = `${score} : ${playerName}`;
 }
 
-function logMessage(message: string): void {
-    console.log(message);
-}
+const logMessage = (message: string) => console.log(message);
 
 // wire things up
 document.getElementById('startGame')!.addEventListener('click', startGame);
