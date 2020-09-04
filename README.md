@@ -71,6 +71,11 @@ function greet(name: string, greeting: string):string {
 function greet(name: string, greeting: string):void {
   alert `Hello ${name}! ${greeting}`;
 }
+
+// we can also use default-initialized parameters..
+function sendGreeting(greeting: string = "Good morning"):void {
+  console.log(greeting);
+}
 ```
 
 ### 2. Organization
