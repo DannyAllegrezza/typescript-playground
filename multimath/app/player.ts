@@ -1,9 +1,11 @@
-class Player implements Person {
-    name: string = '';
-    age?: number | undefined;
-    highScore: number = 0;
+/// <reference path="person.ts" />
 
-    formatName() {
-        return this.name.toUpperCase();
-    }
+class Player implements Person {
+  name: string;
+  age: number;
+  highScore: number;
+
+  formatName() {
+    return this.name.toUpperCase();
+  }  
 }

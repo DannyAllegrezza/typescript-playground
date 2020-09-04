@@ -1,10 +1,5 @@
 interface Person {
-    name: string;
-    age?: number; // optional
-    formatName: () => string; // a function that returns a string
+  name: string;
+  age?: number;
+  formatName: () => string;  
 }
-
-let johnDoe: Person = {
-    name: "John",
-    formatName: () => "John Doe"
-};
