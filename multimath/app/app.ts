@@ -5,7 +5,7 @@ function startGame() {
     postScore(100, playerName);
 }
 
-function logPlayer(name: string = 'MultiMath Player'):void{
+function logPlayer(name: string = 'MultiMath Player'): void {
     console.log(`New game starting for player: ${name}`);
 }
 
@@ -17,10 +17,16 @@ function getInputValue(elementID: string): string | undefined {
     return inputElement.value;
 }
 
-function postScore(score: number, playerName:string = 'MultiMath Player'): void {
+function postScore(score: number, playerName: string = 'MultiMath Player'): void {
     const scoreElement: HTMLElement | null = document.getElementById('postedScores');
     scoreElement!.innerText = `${score} : ${playerName}`;
 }
 
+function logMessage(message: string): void {
+    console.log(message);
+}
+
 // wire things up
 document.getElementById('startGame')!.addEventListener('click', startGame);
+
+logMessage("Welcome to MultiMath");
